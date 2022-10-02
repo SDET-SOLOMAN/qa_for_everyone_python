@@ -20,7 +20,7 @@ my_list = [1, 2, 3, 4, 5, 6]
 s = list(map(lambda x: x-1, my_list))
 print(s)
 
-
+isi
 # Filter - filters out per condition
 
 names = ['austin', 'james', 'mike', 'apple']
