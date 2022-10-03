@@ -45,20 +45,35 @@
 # print('\n'.join(','.join(str(x) for x in num) for num in my_list))
 # print('\n'.join(','.join(map(str, line)) for line in my_list))
 
-list1 = [1, 2, 3, 4]
-list2 = [2, 4, 5, 2, 1, 2]
+# list1 = [1, 2, 3, 4]
+# list2 = [2, 4, 5, 2, 1, 2]
+#
+# from functools import *
+#
+# def sum_arr(*args):
+#     return sum(args)
+#
+# def sum_2(*args):
+#     return sum(map(lambda args1: args1, args))
+#
+# def sum_3(*args):
+#     return reduce(lambda x, y: x + y, args)
+#
+# print(sum_arr(*list1, *list2))
+# print(sum_2(*list1, *list2))
+# print(sum_3(*list1, *list2))
 
-from functools import *
+# my_list = [1, 3, 4, 0, -1, -54, 33]
+#
+# print(sum(filter(lambda x: x > 0, my_list)))
 
-def sum_arr(*args):
-    return sum(args)
+# my_dict = dict(name='james', age=34)
+#
+# for k,v in enumerate(my_dict.items(),88):
+#     print(k,v)
 
-def sum_2(*args):
-    return sum(map(lambda args1: args1, args))
+my_ins = dict(name='mike', city='ny', state='florida', color='pink')
+print({k.capitalize(): v[0].upper() + v[1:] for k, v in my_ins.items()})
 
-def sum_3(*args):
-    return reduce(lambda x, y: x + y, args)
-
-print(sum_arr(*list1, *list2))
-print(sum_2(*list1, *list2))
-print(sum_3(*list1, *list2))
+my_list = list(range(0, 99))
+print({num: ("Even" if num % 2 == 0 else "Odd") for num in my_list})
